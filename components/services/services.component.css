@@ -1,0 +1,93 @@
+/* General Styles */
+#services {
+    padding: 80px 0;
+  }
+  
+  #services h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    color: black;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  
+  /* Card Styles */
+  .service-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease-in-out;
+  }
+  
+  .service-card img {
+    transition: transform 0.5s ease;
+    object-fit: cover;
+    height: 250px;
+    filter: brightness(80%);
+  }
+  
+  /* Hover Effects for Cards */
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .service-card:hover img {
+    transform: scale(1.1);
+    filter: brightness(100%);
+  }
+  
+  /* Button Styles */
+  .btn-outline-light {
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 25px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn-outline-light:hover {
+    background-color: #fff;
+    color: #121212;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #services h2 {
+      font-size: 2rem;
+    }
+    .service-card img {
+      height: 200px;
+    }
+  }
+  
+
+  .btn{
+    background: linear-gradient(45deg, #ffc107, #D16D3D); /* Gradient background */
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px; /* Rounded corners */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  .btn:hover {
+    background: linear-gradient(45deg, #ffc107, #FF6F61); /* Reverse gradient on hover */
+    transform: translateY(-5px); /* Button slightly raises */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  
+  .btn:focus, .btn-custom:active {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(255, 105, 135, 0.7); /* Focus effect */
+  }

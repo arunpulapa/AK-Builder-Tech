@@ -1,0 +1,256 @@
+<!-- app.component.html -->
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Building Your Future with Excellence</h1>
+    <p>Premium Construction Services for Residential, Commercial, and Renovation Projects</p>
+    <a href="#services" class="cta-btn">Explore Our Services</a>
+  </div>
+</section>
+
+
+
+<div class="container">
+  <header class="herao">
+    <div class="herao-content">
+      <div class="badge">
+        <span class="star-icon">★</span> <span style="color: black;">Top rated Company</span>
+      </div>
+      <div class="hero-images">
+        <img src="https://i.pinimg.com/736x/44/7b/63/447b637b548f5ed7265f7b14b1c9a3e5.jpg" alt="Construction site view" class="main-image" />
+        <img src="https://img.freepik.com/premium-photo/woman-civil-engineer-with-blueprints-construction-site-smiling_1061358-30573.jpg" alt="Team discussion" class="inset-image" />
+      </div>
+    </div>
+    <div class="welcome-section">
+      <p class="welcome-text">Welcome you to Ak!</p>
+      <h1 class="title">We Are The Leader In The</h1>
+      <div class="nav-tabs">
+        <button class="tab" [class.active]="activeTab === 'about'" (click)="setActiveTab('about')">About</button>
+        <button class="tab" [class.active]="activeTab === 'mission'" (click)="setActiveTab('mission')">Mission</button>
+        <button class="tab" [class.active]="activeTab === 'vision'" (click)="setActiveTab('vision')">Vision</button>
+      </div>
+
+      <p class="description">
+        Recognized by the construction industry as the training, assessment, certification, and career development standard for the construction and maintenance craft professional.
+      </p>
+      <section class="strategy-section" *ngIf="activeTab === 'about'">
+        <div class="strategy-content">
+          <div class="strategy-box">
+            <h3>Strategy Planning</h3>
+            <div class="price">$14.99</div>
+          </div>
+          <ul class="features-list">
+            <li>
+              <span class="check-icon">✓</span>
+              Home Development
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              Consulting & Implementation
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              Build Quickly, enhanced clients
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              Improving risk management
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="strategy-section" *ngIf="activeTab === 'mission'">
+        <div class="strategy-content">
+          <div class="strategy-box">
+            <h3>Our Mission</h3>
+            <p>To lead the way in construction innovation and professionalism, improving quality and safety standards across the globe.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="strategy-section" *ngIf="activeTab === 'vision'">
+        <div class="strategy-content">
+          <div class="strategy-box">
+            <h3>Our Vision</h3>
+            <p>To be the world's most trusted partner in construction, building a legacy of excellence, sustainability, and growth.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </header>
+</div>
+
+<!-- services -->
+<div class="services-section">
+  <h2 class="services-heading">Services</h2>
+
+  <div class="service-card" *ngFor="let service of servicesone">
+    <div class="service-number">{{ service.id }}</div>
+    <div class="service-content">
+      <h3>{{ service.title }}</h3>
+      <p>{{ service.description }}</p>
+      <a href="#" class="read-more-btn">Read more</a>
+    </div>
+    <div class="service-image">
+      <img [src]="service.image" alt="{{ service.title }}" />
+    </div>
+  </div>
+</div>
+
+<!-- Services We Serve -->
+<section class="py-16 px-4 max-w-7xl mx-auto">
+  <div class="text-center mb-12">
+    <h3 class="text-orange-500 font-medium mb-4">Services We Serve</h3>
+    <h3 class="text-4xl font-bold">
+      We try to do the best
+      <br />
+      of our <span class="text-orange-400">capacity!</span>
+    </h3>
+  </div>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div *ngFor="let service of services; let i = index" class="relative p-6 rounded-lg overflow-hidden group" style="background-color: lightgray;">
+      <div class="relative z-10">
+        <!-- Use the getIconClass method to get the correct icon class -->
+        <div class="bg-white w-16 h-16 flex items-center justify-center rounded-lg mb-4 border-2 border-orange-500 text-orange-500">
+          <i [class]="getIconClass(service.icon)"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-2">{{ service.title }}</h3>
+        <p class="text-gray-600">{{ service.description }}</p>
+      </div>
+      <div class="absolute bottom-0 right-0 w-full h-16 bg-gradient-to-r from-orange-500 to-orange-400 transform translate-y-8 translate-x-8 rotate-12 group-hover:translate-y-6 transition-transform duration-300"></div>
+  
+    </div>
+  </div>
+</section>
+
+
+
+<div class="container">
+  <!-- Client Reviews Section -->
+  <section class="testimonials">
+    <div class="testimonials-list">
+      <div class="testimonial-section">
+        <div class="testimonial-card">
+          <div class="card-image">
+            <img src="https://i.pinimg.com/736x/5b/8d/8c/5b8d8c75254d0c3a1bee5db241af2a89.jpg" alt="Thamos Miller" />
+          </div>
+          <div class="card-content">
+            <h4>Thamos Miller</h4>
+            <p>CEO Buja Builder</p>
+          </div>
+         
+        </div>
+      </div>
+
+      <div class="testimonial-section">
+        <div class="testimonial-card">
+          <div class="card-image">
+            <img src="https://i.pinimg.com/736x/47/89/3e/47893eb5657e42fd4bb7a97a4a6b69ba.jpg" alt="Thamos Miller" />
+          </div>
+          <div class="card-content">
+            <h4>Thamos Miller</h4>
+            <p>CEO Buja Builder</p>
+          </div>
+         
+        </div>
+      </div>
+
+      <div class="testimonial-section">
+        <div class="testimonial-card">
+          <div class="card-image">
+            <img src="https://i.pinimg.com/736x/34/55/c0/3455c0b380374d479dd643b24cc4aea8.jpg" alt="Thamos Miller" />
+          </div>
+          <div class="card-content">
+            <h4>Thamos Miller</h4>
+            <p>CEO Buja Builder</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="testimonial-review">
+      <div class="review-content">
+        <h3 style="font-size: 28px;font-weight: 600;">
+          Client's <span>Reviews</span>
+        </h3>
+        <p>
+          "For each project, we establish strong relationships with our partners, ensuring added value for your endeavors. By uniting public and private sectors, we bring innovative solutions and exceptional results. Our commitment to quality and excellence shines through in every project we undertake, leaving our clients satisfied and inspired to work with us again."
+        </p>
+      </div>
+      <div class="reviewer-details">
+        <img src="https://i.pinimg.com/736x/34/55/c0/3455c0b380374d479dd643b24cc4aea8.jpg" alt="Thamos Miller" />
+        <div>
+          <h4>Thamos Miller</h4>
+          <p>CEO Buja Builder</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+
+  <!-- Latest News Section -->
+  <div class="container">
+    <section class="latest-news">
+      <h3 class="section-title" style="color: white;">
+        Learn more from <span class="highlight">Latest News</span>
+      </h3>
+      <div class="news-cards">
+        <div class="news-card">
+          <div class="date-badge">
+            <span class="day">25 Sep</span>
+          </div>
+          <div class="news-content">
+            <h3>High Productivity Lorries in the UK</h3>
+            <p class="author">By Jamie Milson</p>
+            <p class="news-description">
+              Discover how productivity in the logistics industry is evolving with innovative lorry designs.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="date-badge">
+            <span class="day">25 Sep</span>
+            <span class="month"></span>
+          </div>
+          <div class="news-content">
+            <h3>Eco-Link B-Double Demonstration</h3>
+            <p class="author">By Jamie Milson</p>
+            <p class="news-description">
+              Explore the latest demonstration of the Eco-Link B-Double for sustainable transportation.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="date-badge">
+            <span class="day">25 Sep</span>
+            <span class="month"></span>
+          </div>
+          <div class="news-content">
+            <h3>The Current UK Haulage Market</h3>
+            <p class="author">By Jamie Milson</p>
+            <p class="news-description">
+              How will changes in the UK haulage market impact the logistics industry?
+            </p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+
+
+
+
+
+
+

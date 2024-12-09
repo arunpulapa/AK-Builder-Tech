@@ -1,0 +1,149 @@
+/* Image Logo Styling */
+.logostyle {
+    width: 150px; /* Set logo width */
+    height: auto; /* Auto-adjust height based on width */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Hover Effect for Image Logo */
+  .logostyle:hover {
+    transform: scale(1.1); /* Slightly increase the size of the logo on hover */
+  }
+  
+
+
+/* Yellow Horizontal Bar */
+.yellow-bar {
+    height: 4px;
+    background-color: #ffc107; /* Yellow Color */
+    top: 0;
+    z-index: 1;
+}
+
+/* Navbar Styling */
+.navbar-nav .nav-link {
+    position: relative;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #ffc107; /* Yellow underline on hover */
+    transition: width 0.3s ease-in-out;
+    margin-top: 4px;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Company Name Section - Aligning Left */
+.bg-dark h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+/* Top Bar Styling */
+.bg-warning {
+    font-size: 0.9rem;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.bg-warning .fas,
+.bg-warning .fab {
+    margin-right: 5px;
+}
+
+/* Add Padding to the Left and Right for the Top Bar */
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.container-fluid .col-md-6 {
+    display: flex;
+    align-items: center;
+}
+
+/* Contact Info Row Styling */
+.bg-warning {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.bg-warning .col-md-6 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Adjust color of menu items to bluish */
+.navbar-nav .nav-link {
+    color: #007bff; /* Bluish Color */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0056b3; /* Darker Blue on Hover */
+}
+
+/* Align navbar items with company name */
+.navbar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* More yellow padding on the left and right of navbar */
+.bg-warning + .navbar {
+    padding-left: 40px; /* Add more yellow padding to the left */
+    padding-right: 40px; /* Add more yellow padding to the right */
+}
+
+.container-fluid {
+    padding-left: 20px; /* Make the navbar container extend more on the left */
+    padding-right: 20px; /* Extend the right side as well */
+}
+
+/* Button Styling */
+.btn-warning {
+    padding: 8px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #ffc107; /* Yellow background */
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+    color: #fff;
+}
+
+/* Aligning the icons and text */
+.d-flex .fas {
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+/* Styling for Contact Info (Aligning Text and Icons) */
+.d-flex .mb-1,
+.d-flex .mt-2 {
+    font-size: 1rem;
+    color: #333;
+}
+
+.d-flex span {
+    font-weight: 600;
+}
+
+a{
+    color: white !important;
+}
