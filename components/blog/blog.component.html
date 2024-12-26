@@ -1,0 +1,45 @@
+<!-- blog.component.html -->
+<div class="blog-container">
+    <!-- Blog Categories -->
+    <section class="categories">
+      <div class="category-list">
+        <button 
+          class="category-tab" 
+          [class.active]="activeCategory === 'all'" 
+          (click)="filterCategory('all')">All</button>
+        <button 
+          class="category-tab" 
+          [class.active]="activeCategory === 'construction-technology'" 
+          (click)="filterCategory('construction-technology')">Construction Technology</button>
+        <button 
+          class="category-tab" 
+          [class.active]="activeCategory === 'safety'" 
+          (click)="filterCategory('safety')">Safety Measures</button>
+        <button 
+          class="category-tab" 
+          [class.active]="activeCategory === 'sustainability'" 
+          (click)="filterCategory('sustainability')">Sustainability</button>
+        <button 
+          class="category-tab" 
+          [class.active]="activeCategory === 'materials'" 
+          (click)="filterCategory('materials')">Materials & Equipment</button>
+      </div>
+    </section>
+  
+    <!-- Blog Posts Section -->
+    <section class="blog-posts">
+      <div class="post-grid">
+        <div class="post-item" *ngFor="let post of filteredPosts">
+          <div class="post-image">
+            <img [src]="post.image" alt="Post Image">
+          </div>
+          <div class="post-content">
+            <h3 class="post-title">{{ post.title }}</h3>
+            <p class="post-description">{{ post.description }}</p>
+            <a  class="cta-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  

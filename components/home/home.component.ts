@@ -109,6 +109,26 @@ export class HomeComponent {
       author: 'Jamie Milson',
     },
   ];
+  posts = [
+    {
+      image: 'https://i.imghippo.com/files/nJS5565VM.webp',
+      title: 'Best for any industrial & business solution',
+      date: 'Fri Jun 19 2020',
+      comments: 0,
+    },
+    {
+      image: 'https://i.imghippo.com/files/BG3894Hcc.webp',
+      title: 'Best for any industrial & business solution',
+      date: 'Fri Jun 19 2020',
+      comments: 0,
+    },
+    {
+      image: 'https://i.imghippo.com/files/nJS5565VM.webp',
+      title: 'Best for any industrial & business solution',
+      date: 'Fri Jun 19 2020',
+      comments: 0,
+    },
+  ];
   // Icon mapping with specific Font Awesome classes
   getIconClass(icon: string): string {
     const iconMap: { [key: string]: string } = {

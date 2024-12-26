@@ -1,74 +1,113 @@
 <header>
     <!-- Top Bar with Contact Info and Opening Hours -->
-    <div class="container-fluid bg-warning text-dark py-2">
-        <div class="row align-items-center">
-            <!-- Company Name on the Left with Gap -->
-            <div class="col-md-4 d-flex justify-content-start ps-4" style="margin-left: 50px;">
-                <img src="https://i.imghippo.com/files/dZpT5805BF.jpg" alt="" border="0" class="logostyle"
-                style="width: 90px; height: 60px;border-radius: 5px;">
-                <!-- <h1 class="m-0 fw-bold text-dark" style="font-family: cursive;">Arun Kumar</h1> -->
-            </div>
-        
-            <!-- Contact Info on the Right with Gap -->
-            <div class="col-md-6 d-flex justify-content-end pe-4">
-                <div class="" style="margin-right: 20px"><i class="fas fa-clock" style="color: black;"></i></div>
-                <div class="col">
-                 <div class="row"> Opening hours</div>
-                <div class="row">Mon - Fri: 8:00 - 18:00</div>
+     <nav class="web">
+        <div class="container-fluid bg-warning text-dark py-2 bg-warningg">
+            <div class="row align-items-center">
+                <!-- Company Name on the Left with Gap -->
+                <div class="col-md-4 d-flex justify-content-start ps-4 logoimg" style="margin-left: 50px;" >
+                    <img src="https://i.imghippo.com/files/dZpT5805BF.jpg" alt="" border="0" class="logostyle"
+                         style="width: 90px; height: 60px; border-radius: 5px;">
                 </div>
-                <div class="" style="margin-right: 20px"><i class="fas fa-phone" style="color: black;"></i></div>
-                <div class="col">
-                 <div class="row"> Call Us</div>
-                <div class="row">+012 345 6789</div>
+    
+                <!-- Contact Info on the Right with Gap (Hidden for Mobile) -->
+                <div class="col-md-6 d-flex justify-content-end pe-4 contact-info">
+                    <div class="" style="margin-right: 20px"><i class="fas fa-clock" style="color: black;"></i></div>
+                    <div class="col">
+                        <div class="row">Opening hours</div>
+                        <div class="row">Mon - Fri: 8:00 - 18:00</div>
+                    </div>
+                    <div class="" style="margin-right: 20px"><i class="fas fa-phone" style="color: black;"></i></div>
+                    <div class="col">
+                        <div class="row">Call Us</div>
+                        <div class="row">+012 345 6789</div>
+                    </div>
+                    <div class="" style="margin-right: 20px"><i class="fas fa-envelope" style="color: black;"></i></div>
+                    <div class="col">
+                        <div class="row">Email Us</div>
+                        <div class="row">{{email}}</div>
+                    </div>
                 </div>
-                <div class="" style="margin-right: 20px"><i class="fas fa-envelope" style="color: black;"></i></div>
-                <div class="col">
-                 <div class="row"> Email Us</div>
-                <div class="row">{{email}}</div>
-                </div>
-                <span> </span>
+               
             </div>
         </div>
-    </div>
 
-    <!-- Yellow Background for the Contact Info Row -->
-    <div class="bg-warning">
-        <!-- Navigation Bar with Extra Yellow Padding at Left and Right -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-relative">
-            <!-- Yellow Bar -->
-            <div class="yellow-bar position-absolute start-0 w-100"></div>
 
-            <div class="container-fluid"> <!-- Use container-fluid to extend the navbar across the full width -->
-                <!-- Toggle Button for Mobile -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Navbar Links -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-auto"> <!-- Align the navbar items to the left -->
-                        <li class="nav-item">
-                            <a class="nav-link text-primary fw-bold px-3" href="#">Home</a>
-                        </li>
-                     
-                        <li class="nav-item">
-                            <a class="nav-link text-primary fw-bold px-3" href="services">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-primary fw-bold px-3" href="projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-primary fw-bold px-3" href="about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-primary fw-bold px-3" href="contactus">Contact</a>
-                        </li>
-                    </ul>
-
-                    <!-- "Get Quote" Button on the Right -->
-                    <a href="contactus" class="btn btn-warning text-dark ms-auto">Get Quote</a> <!-- Use ms-auto to push the button to the right -->
+    
+        <!-- Yellow Background for the Contact Info Row -->
+        <div class="bg-warning">
+            <!-- Navigation Bar with Extra Yellow Padding at Left and Right -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-relative">
+                <!-- Yellow Bar -->
+                <div class="yellow-bar position-absolute start-0 w-100"></div>
+    
+                <div class="container-fluid">
+                    <!-- Toggle Button for Mobile -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <!-- Navbar Links -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link text-primary fw-bold px-3" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-primary fw-bold px-3" href="services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-primary fw-bold px-3" href="projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-primary fw-bold px-3" href="blog">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-primary fw-bold px-3" href="about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-primary fw-bold px-3" href="contactus">Contact</a>
+                            </li>
+                        </ul>
+                        <!-- "Get Quote" Button on the Right -->
+                        <a href="contactus" class="btn btn-warning text-dark ms-auto">Get Quote</a>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </div>
+            </nav>
+        </div>
+     </nav>
+
+
+
+
+
+
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mobile-navbar" style="background-color: #ffc107 !important;">
+        <div class="container-fluid">
+          <!-- Logo for Mobile -->
+          <img src="https://i.imghippo.com/files/dZpT5805BF.jpg" alt="Logo" class="mobile-logo" style="border-radius: 5px;">
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavMobile"
+                  aria-controls="navbarNavMobile" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarNavMobile">
+            <ul class="navbar-nav w-100">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactus">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 </header>

@@ -87,3 +87,12 @@
     color: #bbb;
   }
   
+  @media (max-width: 768px) {
+    .footer-links{
+display: none !important;
+    }
+    .footer-contact{
+      margin-left: 20px !important;
+    }
+  }
+  

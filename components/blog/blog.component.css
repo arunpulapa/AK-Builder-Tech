@@ -1,0 +1,112 @@
+/* blog.component.css */
+.blog-container {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+  }
+  
+  /* Categories Section */
+  .categories {
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  
+  .category-list {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .category-tab {
+    padding: 12px 24px;
+    background-color: #f0f0f0;
+    border: 2px solid transparent;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .category-tab.active,
+  .category-tab:hover {
+    background-color: #ff6f61;
+    color: white;
+    border-color: #ff6f61;
+  }
+  
+  /* Blog Posts */
+  .blog-posts .post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding-top: 20px;
+  }
+  
+  .post-item {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .post-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .post-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .post-item:hover .post-image img {
+    transform: scale(1.1);
+  }
+  
+  .post-content {
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .post-title {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+    line-height: 1.2;
+    transition: color 0.3s ease;
+  }
+  
+  .post-description {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .cta-btn {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 15px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #e54f4a;
+    transform: translateY(-3px);
+  }
+  

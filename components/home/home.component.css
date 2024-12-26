@@ -70,10 +70,13 @@ body {
   display: grid;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .services-heading[_ngcontent-ng-c3574234250]::after {
+    display: none !important;
+}
 }
 
 @media (min-width: 1024px) {
@@ -898,4 +901,47 @@ body {
 .read-more:hover {
   background: #f68026;
   color: #fff;
+} 
+@media (max-width: 768px) {
+  .md\:grid-cols-2[_ngcontent-ng-c3574234250] {
+      grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+  .service-card[_ngcontent-ng-c3574234250] {
+    display: grid !important;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
 }
+.herao[_ngcontent-ng-c3574234250] {
+  display: flow !important;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+.welcome-text[_ngcontent-ng-c3574234250] {
+ display: none !important;
+}
+.hero-content[_ngcontent-ng-c3574234250] h1[_ngcontent-ng-c3574234250] {
+  font-size: 2rem !important;
+}
+.hero[_ngcontent-ng-c3574234250] {
+  height: 42vh !important;
+  
+}
+.testimonial-review[_ngcontent-ng-c3574234250] {
+  width: 100% !important;
+ 
+}
+.testimonials[_ngcontent-ng-c3574234250] {
+ display: grid !important; 
+  margin: 50px 0;
+  gap: 20px;
+}
+.testimonials-list[_ngcontent-ng-c3574234250] {
+  display: none !important;
+}
+}
+
+

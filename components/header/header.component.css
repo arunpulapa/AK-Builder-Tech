@@ -147,3 +147,157 @@
 a{
     color: white !important;
 }
+
+
+
+
+
+
+
+
+
+/* General Logo Styling */
+.logostyle {
+    width: 90px;
+    height: 60px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.logostyle:hover {
+    transform: scale(1.1);
+}
+
+/* Yellow Bar */
+.yellow-bar {
+    height: 4px;
+    background-color: #ffc107;
+    top: 0;
+    z-index: 1;
+}
+
+/* Navbar Styling */
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #007bff;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0056b3;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #ffc107;
+    transition: width 0.3s ease-in-out;
+    margin-top: 4px;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    /* Hide Contact Info on Mobile */
+    .bg-warning .col-md-6 {
+        display: none;
+    }
+
+    /* Adjust Navbar Padding */
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .logostyle {
+        width: 70px;
+        height: auto;
+    }
+    .logoimg{
+        margin-left: 0px !important
+        ;
+    }
+    .contact-info{
+        display: none !important;
+    }
+
+    /* Center Align Logo */
+    .col-md-4 {
+        justify-content: center !important;
+    }
+    .logostyle{
+     display: none !important;
+    }
+    .web{
+        display: none;
+    }
+}
+
+
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Hide Desktop Navbar for Mobile */
+  @media (max-width: 768px) {
+    /* Hide Desktop Navbar */
+    .desktop-navbar {
+      display: none;
+    }
+  
+    /* Show Mobile Navbar */
+    .mobile-navbar {
+      display: block;
+    }
+  
+    /* Mobile Navbar Styling */
+    .mobile-navbar .navbar-toggler {
+      border: none;
+      background-color: #ffc107;
+    }
+  
+    .mobile-navbar .navbar-toggler-icon {
+      background-color: #ffc107;
+    }
+  
+    .mobile-navbar .navbar-nav {
+      text-align: center;
+    }
+  
+    .mobile-navbar .navbar-nav .nav-item {
+      padding: 10px;
+    }
+  
+    /* Logo for Mobile */
+    .mobile-navbar .mobile-logo {
+      width: 80px; /* Adjust the size of the logo on mobile */
+      height: 50px;
+    }
+  }
+  
+  /* Desktop Navbar Styling */
+  @media (min-width: 769px) {
+    /* Show Desktop Navbar */
+    .desktop-navbar {
+      display: block;
+    }
+  
+    /* Hide Mobile Navbar */
+    .mobile-navbar {
+      display: none;
+    }
+  
+    /* Logo for Desktop */
+    .desktop-navbar .logostyle {
+      width: 150px; /* Adjust the size of the logo on desktop */
+      height: auto;
+    }
+  }
+  

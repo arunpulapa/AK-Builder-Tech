@@ -6,6 +6,7 @@ import { ProjectsComponent } from '../../components/projects/projects.component'
 import { HeaderComponent } from '../../components/header/header.component';
 import { ContactusComponent } from '../../components/contactus/contactus.component';
 import { ServicesComponent } from '../../components/services/services.component';
+import { BlogComponent } from '../../components/blog/blog.component';
 
 export const routes: Routes = [
     {path:'', component:HomeComponent},
@@ -15,4 +16,6 @@ export const routes: Routes = [
      {path:'contactus', component:ContactusComponent},
      {path:'services', component:ServicesComponent},
      {path:'projects', component:ProjectsComponent},
+     {path:'blog', component:BlogComponent},
 ];
+
