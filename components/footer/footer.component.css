@@ -1,98 +1,142 @@
 /* Footer Styles */
 .footer {
-    background-color: #333;
-    color: white;
-    padding: 40px 20px;
-    font-family: Arial, sans-serif;
-  }
-  
+  background-color: #222;
+  color: white;
+  padding: 50px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* Branding Section */
+.footer-left {
+  flex: 1;
+}
+
+.footer-logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  font-family: cursive;
+}
+
+.footer-description {
+  font-size: 16px;
+  color: #bbb;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+/* Social Icons */
+.footer-social {
+  margin-top: 20px;
+}
+
+.footer-social-link {
+  margin-right: 15px;
+  color: #ff7f50;
+  font-size: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-social-link:hover {
+  color: white;
+}
+
+/* Quick Links */
+.footer-links {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-heading {
+  font-size: 18px;
+  color: #ff7f50;
+  margin-bottom: 15px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-link {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-link i {
+  margin-right: 8px;
+}
+
+.footer-link:hover {
+  color: #ff7f50;
+}
+
+/* Contact Info */
+.footer-contact {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-contact-info {
+  font-size: 16px;
+  color: #bbb;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-contact-info i {
+  margin-right: 8px;
+  color: #ff7f50;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+}
+
+.footer-bottom-text {
+  font-size: 14px;
+  color: #bbb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .footer-container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
+    flex-direction: column;
+    text-align: center;
   }
-  
-  .footer-left {
-    flex: 1;
-    max-width: 300px;
-  }
-  
-  .footer-logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ff7f50;
-  }
-  
-  .footer-description {
-    font-size: 16px;
-    color: #bbb;
-    margin-top: 10px;
-  }
-  
-  .footer-social {
+
+  .footer-links {
     margin-top: 20px;
   }
-  
+
+  .footer-contact {
+    margin-top: 20px;
+  }
+
+  .footer-social {
+    display: flex;
+    justify-content: center;
+  }
+
   .footer-social-link {
-    margin-right: 15px;
-    color: #ff7f50;
-    text-decoration: none;
-    font-size: 16px;
+    margin: 0 10px;
   }
-  
-  .footer-social-link:hover {
-    text-decoration: underline;
-  }
-  
-  .footer-links, .footer-contact {
-    flex: 1;
-  }
-  
-  .footer-heading {
-    font-size: 18px;
-    color: #ff7f50;
-    margin-bottom: 10px;
-  }
-  
-  .footer-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-link {
-    color: #bbb;
-    text-decoration: none;
-    font-size: 16px;
-    margin-bottom: 8px;
-    display: block;
-  }
-  
-  .footer-link:hover {
-    color: #ff7f50;
-  }
-  
-  .footer-contact-info {
-    font-size: 16px;
-    color: #bbb;
-  }
-  
-  .footer-bottom {
-    text-align: center;
-    margin-top: 40px;
-  }
-  
-  .footer-bottom-text {
-    font-size: 14px;
-    color: #bbb;
-  }
-  
-  @media (max-width: 768px) {
-    .footer-links{
-display: none !important;
-    }
-    .footer-contact{
-      margin-left: 20px !important;
-    }
-  }
-  
+}
