@@ -1,26 +1,35 @@
-<section id="contact" class="text-white py-5">
-    <div class="container text-center">
-      <h2 class="section-title" style="color: black;">Contact Us</h2>
-      <p class="section-description" style="color: black;">Get in touch with us to start your next project.</p>
-      <div class="row align-items-center justify-content-center">
-        <!-- Contact Form -->
-        <div class="col-md-6 mb-4 mb-md-0">
-          <form class="contact-form">
-            <input type="text" class="form-control mb-3" placeholder="Your Name" required>
-            <input type="email" class="form-control mb-3" placeholder="Your Email" required>
-            <textarea class="form-control mb-3" rows="4" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
-          </form>
-        </div>
-        <!-- Contact Info -->
-        <div class="col-md-6">
-          <div class="contact-info">
-            <p style="color: black;"><i class="fas fa-map-marker-alt" ></i> Road No. 10, Banjara Hills, Hyderabad, 500034, Telangana, India</p>
-            <p style="color: black;"><i class="fas fa-phone-alt"></i> +012 345 6789</p>
-            <p style="color: black;"><i class="fas fa-envelope"></i> {{email}}</p>
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2 class="section-title">Get in Touch</h2>
+    <p class="section-description">We'd love to hear from you! Reach out to us for any inquiries or collaborations.</p>
+    <div class="contact-wrapper">
+      <!-- Contact Form -->
+      <div class="contact-form-container">
+        <form class="contact-form">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Your Name" required>
+            <i class="fas fa-user input-icon"></i>
           </div>
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Your Email" required>
+            <i class="fas fa-envelope input-icon"></i>
+          </div>
+          <div class="input-group">
+            <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+            <i class="fas fa-comment-dots input-icon"></i>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+      
+      <!-- Contact Info -->
+      <div class="contact-info-container">
+        <div class="contact-info">
+          <p><i class="fas fa-map-marker-alt"></i> Road No. 10, Banjara Hills, Hyderabad, India</p>
+          <p><i class="fas fa-phone-alt"></i> +012 345 6789</p>
+          <p><i class="fas fa-envelope"></i> {{email}}</p>
         </div>
       </div>
     </div>
-  </section>
-  
+  </div>
+</section>
