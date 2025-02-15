@@ -9,7 +9,8 @@ import { ServicesComponent } from '../../components/services/services.component'
 import { BlogComponent } from '../../components/blog/blog.component';
 
 export const routes: Routes = [
-    {path:'', component:HomeComponent},
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    {path:'home', component:HomeComponent},
      {path:'about', component:AboutComponent},
      {path:'footer', component:FooterComponent},
      {path:'header', component:HeaderComponent},
@@ -17,5 +18,6 @@ export const routes: Routes = [
      {path:'services', component:ServicesComponent},
      {path:'projects', component:ProjectsComponent},
      {path:'blog', component:BlogComponent},
+     { path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];
 

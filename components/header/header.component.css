@@ -268,11 +268,13 @@ body {
     }
   
     .mobile-navbar .navbar-nav {
-      text-align: center;
+      text-align: left ;
     }
   
     .mobile-navbar .navbar-nav .nav-item {
-      padding: 10px;
+      padding: 2px;
+      font-size: 26px;
+      font-weight: 600;
     }
   
     /* Logo for Mobile */
