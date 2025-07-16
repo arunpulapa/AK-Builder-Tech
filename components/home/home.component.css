@@ -33,32 +33,72 @@ body {
   
   /* Hero Section */
   .hero {
-    position: relative;
-    height: 100vh;
-    background: url('https://img.freepik.com/premium-photo/hd-construction-site-architecture-scene-background-image_1074426-825.jpg') center center/cover no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .hero-content {
-    z-index: 2;
-    color: white;
-    max-width: 800px;
-  }
-  
-  .hero-content h1 {
-    font-size: 3.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-  }
-  
+  position: relative;
+  height: 100vh;
+  background: url('https://i.pinimg.com/1200x/d9/4e/2b/d94e2b8dd3fa29d2b72b8e4a644c9f3e.jpg') center center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 1;
+}
+
+/* Gradient Glass Card */
+.herocontent {
+  position: relative;
+  z-index: 2;
+  padding: 50px 40px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+  animation: fadeInUp 1.2s ease-out forwards;
+  max-width: 800px;
+  width: 90%;
+}
+
+.hero h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: #e0e0e0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.herocontent .highlight {
+  color: #00ffe1;
+}
+
+.herocontent p {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 30px;
+  animation: slideUp 1.2s ease-out;
+}
+.cta-btn, .btn-warning {
+  transition: all 0.3s ease;
+  border-radius: 30px;
+}
+
+.cta-btn:hover, .btn-warning:hover {
+  background-color: #e0a800;
+  transform: translateY(-2px);
+}
+
 
 
 
@@ -943,5 +983,8 @@ body {
   display: none !important;
 }
 }
+
+
+
 
 

@@ -28,6 +28,7 @@ export class HomeComponent {
       icon: 'fa-building',
       title: 'General Contracting',
       description: 'Ak collaborative approach to preconstruction...'
+      
     },
     {
       icon: 'fa-truck',
@@ -56,21 +57,21 @@ export class HomeComponent {
       title: 'Repair & Expand',
       description:
         'Ak collaborative approach to preconstruction, founded on transparency and accountability is the most trusted and comprehensive in the industry.',
-      image: 'https://i.imghippo.com/files/jUnk5360zxo.webp', // Replace with actual path
+      image: 'https://i.pinimg.com/736x/ed/75/97/ed75975635d5b405acceb4e25443fab5.jpg', // Replace with actual path
     },
     {
       id: 2,
       title: 'General Contracting',
       description:
         'Ak collaborative approach to preconstruction, founded on transparency and accountability is the most trusted and comprehensive in the industry.',
-      image: 'https://i.imghippo.com/files/RQhd5698ek.webp', // Replace with actual path
+      image: 'https://i.pinimg.com/736x/0e/7c/55/0e7c55859f2cba3280b7b429b999e185.jpg', // Replace with actual path
     },
     {
       id: 3,
       title: 'Flooring & Roofing',
       description:
         'Ak collaborative approach to preconstruction, founded on transparency and accountability is the most trusted and comprehensive in the industry.',
-      image: 'https://i.imghippo.com/files/ruGL4250C.webp', // Replace with actual path
+      image: 'https://i.pinimg.com/736x/2d/33/1e/2d331e6ead8fb4157c90cd969cdaa7a8.jpg', // Replace with actual path
     },
   ];
 
